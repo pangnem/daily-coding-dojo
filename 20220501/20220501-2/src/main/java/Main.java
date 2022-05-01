@@ -23,4 +23,22 @@ public class Main {
                 .findFirst()
                 .orElse("");
     }
+
+    public String solution2(String string) {
+        String maxLengthWord = "";
+        while (string.contains(" ")) {
+            String forWardWord = string.substring(0, string.indexOf(" "));
+            if (forWardWord.length() > maxLengthWord.length()) {
+                maxLengthWord = forWardWord;
+            }
+
+            string = string.substring(string.indexOf(" ") + 1);
+        }
+
+        if (string.length() > maxLengthWord.length()) {
+            return string;
+        }
+
+        return maxLengthWord;
+    }
 }
