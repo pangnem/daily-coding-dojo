@@ -8,9 +8,8 @@ class MainTest {
     void testCase1() {
         Main main = new Main();
 
-        String actual = main.solution("StuDY");
-
-        assertThat(actual).isEqualTo("sTUdy");
+        assertThat(main.solution("StuDY")).isEqualTo("sTUdy");
+        assertThat(main.solution2("StuDY")).isEqualTo("sTUdy");
     }
 
     @Test
