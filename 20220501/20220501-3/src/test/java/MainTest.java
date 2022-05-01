@@ -10,6 +10,8 @@ class MainTest {
 
         assertThat(main.solution(3, new String[]{"good", "Time", "Big"}))
                 .isEqualTo("doog\nemiT\ngiB\n");
+        assertThat(main.solution2(3, new String[]{"good", "Time", "Big"}))
+                .isEqualTo("doog\nemiT\ngiB\n");
     }
 
     @Test

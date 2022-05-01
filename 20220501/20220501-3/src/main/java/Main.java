@@ -23,4 +23,29 @@ public class Main {
 
         return mainStringBuilder.toString();
     }
+
+    public String solution2(int wordCount, String[] strings) {
+        StringBuilder stringBuilder = new StringBuilder();
+        for (int i = 0; i < wordCount; i++) {
+            String string = strings[i];
+            char[] chars = string.toCharArray();
+
+            int lt = 0;
+            int rt = chars.length - 1;
+            while (lt <= rt) {
+                char temp = chars[lt];
+                chars[lt] = chars[rt];
+                chars[rt] = temp;
+
+                lt++;
+                rt--;
+            }
+
+            stringBuilder.append(String.valueOf(chars));
+            stringBuilder.append("\n");
+        }
+
+        return stringBuilder.toString();
+    }
+
 }
