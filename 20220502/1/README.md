@@ -33,4 +33,4 @@ S#T!EG*b@a
 
 ### Sources
 
-- https://cote.inflearn.com/contest/10/problem/01-02 
+- https://cote.inflearn.com/contest/10/problem/01-05 
