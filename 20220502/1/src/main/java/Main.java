@@ -29,16 +29,7 @@ public class Main {
             rt--;
         }
 
-        return toString(chars);
-    }
-
-    private String toString(char[] chars) {
-        StringBuilder stringBuilder = new StringBuilder();
-        for (char aChar : chars) {
-            stringBuilder.append(aChar);
-        }
-
-        return stringBuilder.toString();
+        return String.valueOf(chars);
     }
 
     private void swap(char[] chars, int lt, int rt) {
