@@ -18,4 +18,14 @@ public class Main {
 
         return "YES";
     }
+
+    public String solution2(String input1) {
+        String reversedString = new StringBuilder(input1).reverse().toString();
+
+        if (input1.equalsIgnoreCase(reversedString)) {
+            return "YES";
+        }
+
+        return "NO";
+    }
 }

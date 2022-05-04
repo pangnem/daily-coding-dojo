@@ -9,5 +9,6 @@ class MainTest {
         Main main = new Main();
 
         assertThat(main.solution("gooG")).isEqualTo("YES");
+        assertThat(main.solution2("gooG")).isEqualTo("YES");
     }
 }
