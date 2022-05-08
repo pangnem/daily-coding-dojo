@@ -32,4 +32,4 @@ YES
 
 ## Sources
 
-- https://cote.inflearn.com/contest/10/problem/01-07
+- https://cote.inflearn.com/contest/10/problem/01-06
