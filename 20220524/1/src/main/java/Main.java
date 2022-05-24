@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
@@ -19,5 +20,15 @@ public class Main {
         }
 
         return String.valueOf(Integer.parseInt(stringBuilder.toString()));
+    }
+
+    public String solution2(String input1) {
+        String collect = input1.chars()
+                .mapToObj(i -> (char) i)
+                .filter(it -> !Character.isAlphabetic(it))
+                .map(String::valueOf)
+                .collect(Collectors.joining(""));
+
+        return String.valueOf(Integer.parseInt(collect));
     }
 }

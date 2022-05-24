@@ -11,5 +11,6 @@ class MainTest {
         Main main = new Main();
 
         assertThat(main.solution("g0en2T0s8eSoft")).isEqualTo("208");
+        assertThat(main.solution2("g0en2T0s8eSoft")).isEqualTo("208");
     }
 }
